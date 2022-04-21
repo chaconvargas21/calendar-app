@@ -1,7 +1,6 @@
 const base_url = process.env.REACT_APP_API_URL;
 const fetchSinToken = (endpoint, data, method = "GET") => {
   const url = `${base_url}/${endpoint}`;
-
   if (method === "GET") {
     return fetch(url);
   } else {
